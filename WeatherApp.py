@@ -7,7 +7,7 @@ WIDTH = 800
 def on_func():
 	print("Status: Active")
 	status.config(text="Status: Active")
-	status.config(fg="green")
+	status.config(fg="#6BF688")
 def off_func():
 	print("Status: Inactive")
 	status.config(text="Status: Inactive")
@@ -38,7 +38,7 @@ on.place(relwidth=0.5,relheight=1)
 off = tk.Button(button_frame,text = " OFF ", bg="#54625B", fg="white",highlightbackground="#54625B",command=lambda:off_func())
 off.place(relx=0.5,relwidth=0.5,relheight=1)
 
-status = tk.Label(root,text="Status: Active ",font=("Courier", 20),bg="#54625B",fg="green")
+status = tk.Label(root,text="Status: Active ",font=("Courier", 20),bg="#54625B",fg="#6BF688")
 status.place(relx=0.7,rely=0.35,relwidth=0.25,relheight=0.1)
 
 
