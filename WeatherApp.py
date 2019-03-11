@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import tkinter as tk
 #from tkinter import ttk
-HEIGHT = 1000
-WIDTH = 1000
+HEIGHT = 800
+WIDTH = 800
 
 def on_func():
 	print("Status: Active")
@@ -25,7 +25,7 @@ background_label.place(relwidth=1, relheight=1)
 
 
 live_frame = tk.Frame(root,bg="#091722",bd=5)
-live_frame.place(relx=0.05,rely=0.05,relwidth=0.6,relheight=0.5)
+live_frame.place(relx=0.05,rely=0.05,relwidth=0.6,relheight=0.45)
 
 live_label = tk.Label(live_frame)
 live_label.place(relwidth=1,relheight=1)
@@ -42,6 +42,14 @@ status = tk.Label(root,text="Status: Active ",font=("Courier", 20),bg="#091823",
 status.place(relx=0.7,rely=0.35,relwidth=0.25,relheight=0.1)
 
 
+gps_frame = tk.Frame(root,bg="#091722")
+gps_frame.place(relx=0.05,rely=0.5,relwidth=0.6,relheight=0.45)
+
+gps_label = tk.Label(gps_frame)
+gps_label.place(relwidth=1,relheight=1)
+
+status = tk.Label(root,text="Status: Active ",font=("Courier", 20),bg="#091823",fg="green")
+status.place(relx=0.7,rely=0.35,relwidth=0.25,relheight=0.1)
 
 
 
