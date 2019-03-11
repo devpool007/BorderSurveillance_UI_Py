@@ -38,7 +38,7 @@ on.place(relwidth=0.5,relheight=1)
 off = tk.Button(button_frame,text = " OFF ", bg="#54625B", fg="white",highlightbackground="#54625B",command=lambda:off_func())
 off.place(relx=0.5,relwidth=0.5,relheight=1)
 
-status = tk.Label(root,text="Status: Active ",font=("Courier", 20),bg="#091823",fg="green")
+status = tk.Label(root,text="Status: Active ",font=("Courier", 20),bg="#54625B",fg="green")
 status.place(relx=0.7,rely=0.35,relwidth=0.25,relheight=0.1)
 
 
@@ -48,9 +48,19 @@ gps_frame.place(relx=0.05,rely=0.5,relwidth=0.6,relheight=0.45)
 gps_label = tk.Label(gps_frame)
 gps_label.place(relwidth=1,relheight=1)
 
-status = tk.Label(root,text="Status: Active ",font=("Courier", 20),bg="#091823",fg="green")
-status.place(relx=0.7,rely=0.35,relwidth=0.25,relheight=0.1)
+pos = tk.Label(root,text="Position",font=("Courier", 20),bg="#091722",fg="white")
+pos.place(relx=0.68,rely=0.55,relwidth=0.3,relheight=0.1)
 
+lat_frame = tk.Frame(root,bg="#091722",bd=5)
+lat_frame.place(relx=0.68,rely=0.65,relwidth=0.3,relheight=0.1)
 
+lat_label = tk.Label(lat_frame,bg="#7B857B",text="Latitude: ",font=("Courier", 20))
+lat_label.place(relwidth=1,relheight=1)
+
+lon_frame = tk.Frame(root,bg="#091722",bd=5)
+lon_frame.place(relx=0.68,rely=0.745,relwidth=0.3,relheight=0.1)
+
+lon_label = tk.Label(lon_frame,bg="#7B857B",text="Longitude: ",font=("Courier", 20))
+lon_label.place(relwidth=1,relheight=1)
 
 root.mainloop()
